@@ -46,6 +46,8 @@
       <th>Address</th>
       <th>Contact Numbers</th>
       <th>Registrations</th>
+        <th>Excess</th>
+        <th>Need</th>
     </tr>
     {% for item in relief_camps %}
     <tr valign="top">
@@ -66,6 +68,12 @@
       <td>
         {{ item.count }}
       </td>
+    <td>
+        {{ item.excess }}
+    </td>
+    <td>
+        {{ item.need }}
+    </td>
     </tr>
     {% endfor %}
   </table>

@@ -278,6 +278,8 @@ class RescueCamp(models.Model):
     medical_req = models.TextField(blank=True,null=True,verbose_name="Medical - മെഡിക്കൽ")
     other_req = models.TextField(blank=True,null=True,verbose_name="Other - മറ്റുള്ളവ")
 
+    excess = models.TextField(blank=True,null=True,verbose_name="Excess - അധികമുള്ളത്")
+    need = models.TextField(blank=True,null=True,verbose_name="Need - ആവശ്യമുണ്ട്")
     class Meta:
         verbose_name = 'Relief: Camp'
         verbose_name_plural = "Relief: Camps"
